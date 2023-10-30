@@ -1,4 +1,5 @@
 using EasyInventory_Backend.Shared.Persistence.Contexts;
+using EasyInventory_Backend.Shared.Domain.Repositories;
 
 namespace EasyInventory_Backend.Shared.Persistence.Repositories;
 

@@ -19,7 +19,8 @@
 
     <ItemGroup>
       <Folder Include="Inventory\Application\" />
-      <Folder Include="Inventory\Domain\" />
+      <Folder Include="Inventory\Domain\Repositories\" />
+      <Folder Include="Inventory\Domain\Services\" />
       <Folder Include="Inventory\Infrastructure\" />
       <Folder Include="Inventory\Interfaces\" />
     </ItemGroup>
