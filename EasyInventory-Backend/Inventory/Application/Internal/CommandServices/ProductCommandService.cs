@@ -3,7 +3,6 @@ using EasyInventory_Backend.Inventory.Domain.Model.Commands;
 using EasyInventory_Backend.Inventory.Domain.Repositories;
 using EasyInventory_Backend.Inventory.Domain.Services;
 using EasyInventory_Backend.Shared.Domain.Repositories;
-using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace EasyInventory_Backend.Inventory.Application.Internal.CommandServices;
 
@@ -31,7 +30,7 @@ public class ProductCommandService: IProductCommandService
     {
         var existingProduct = await _productRepository.FindByNameAsync(command.Name);
         if (existingProduct == null)
-            return (existingProduct);
+            throw new Exception("Product not exist");
         if(command.Stock!=null)
             existingProduct.Stock = command.Stock;
         if(command.Discount!=null)

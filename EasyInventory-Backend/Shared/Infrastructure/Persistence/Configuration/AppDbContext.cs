@@ -32,7 +32,18 @@ public class AppDbContext :DbContext
         builder.Entity<Product>().Property(p => p.CurrentStock).IsRequired().HasMaxLength(10);
         builder.Entity<Product>().Property(p => p.UserId).IsRequired().HasMaxLength(10);
         builder.Entity<Product>().Property(p => p.Discount).IsRequired().HasMaxLength(10);
+        //Customer Entity Configuration
+        builder.Entity<Customer>().ToTable("Customers");
+        builder.Entity<Customer>().HasKey(p => p.Id);
+        builder.Entity<Customer>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<Customer>().Property(p => p.Birthday).IsRequired();
+        builder.Entity<Customer>().Property(p => p.Email).IsRequired();
+        builder.Entity<Customer>().Property(p => p.Name).IsRequired();
+        builder.Entity<Customer>().Property(p => p.LastName).IsRequired();
+        builder.Entity<Customer>().Property(p => p.Phone).IsRequired();
+        //Asset Entity Configuration
         //Apply snake Case naming convention
+        
         builder.UseSnakeCaseNamingConvention();
     }
 }
