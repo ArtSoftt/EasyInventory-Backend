@@ -1,6 +1,11 @@
+using EasyInventory_Backend.Inventory.Application.Internal.CommandServices;
+using EasyInventory_Backend.Inventory.Application.Internal.QueryServices;
+using EasyInventory_Backend.Inventory.Domain.Repositories;
+using EasyInventory_Backend.Inventory.Domain.Services;
+using EasyInventory_Backend.Inventory.Infrastructure.Persistence.Repositories;
 using EasyInventory_Backend.Shared.Domain.Repositories;
-using EasyInventory_Backend.Shared.Persistence.Contexts;
-using EasyInventory_Backend.Shared.Persistence.Repositories;
+using EasyInventory_Backend.Shared.Infrastructure.Persistence.Configuration;
+using EasyInventory_Backend.Shared.Infrastructure.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,7 +37,9 @@ builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 //Inventory Bounded Context Injection Configuration
-
+builder.Services.AddScoped<IProductQueryService, ProductQueryService>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IProductCommandService, ProductCommandService>();
 
 
 var app = builder.Build();

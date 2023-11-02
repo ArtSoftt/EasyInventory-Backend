@@ -1,13 +1,14 @@
-using EasyInventory_Backend.Shared.Persistence.Contexts;
-using Microsoft.EntityFrameworkCore;
 using EasyInventory_Backend.Shared.Domain.Repositories;
+using EasyInventory_Backend.Shared.Infrastructure.Persistence.Configuration;
+using Microsoft.EntityFrameworkCore;
 
-namespace EasyInventory_Backend.Shared.Persistence.Repositories;
+namespace EasyInventory_Backend.Shared.Infrastructure.Persistence.Repositories;
+
 
 public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
 {
     protected readonly AppDbContext Context;
-
+    
     protected BaseRepository(AppDbContext context)
     {
         Context = context;

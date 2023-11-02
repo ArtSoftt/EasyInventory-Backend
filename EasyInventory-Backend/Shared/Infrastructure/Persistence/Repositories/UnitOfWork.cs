@@ -1,11 +1,13 @@
-using EasyInventory_Backend.Shared.Persistence.Contexts;
 using EasyInventory_Backend.Shared.Domain.Repositories;
+using EasyInventory_Backend.Shared.Infrastructure.Persistence.Configuration;
 
-namespace EasyInventory_Backend.Shared.Persistence.Repositories;
+namespace EasyInventory_Backend.Shared.Infrastructure.Persistence.Repositories;
 
 public class UnitOfWork : IUnitOfWork
 {
+
     private readonly AppDbContext _context;
+    
     public UnitOfWork(AppDbContext context)
     {
         _context = context;
