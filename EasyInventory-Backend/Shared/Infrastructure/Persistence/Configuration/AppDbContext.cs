@@ -41,6 +41,15 @@ public class AppDbContext :DbContext
         builder.Entity<Customer>().Property(p => p.Name).IsRequired();
         builder.Entity<Customer>().Property(p => p.LastName).IsRequired();
         builder.Entity<Customer>().Property(p => p.Phone).IsRequired();
+        //Provider Entity Configuration
+        builder.Entity<Provider>().ToTable("Providers");
+        builder.Entity<Provider>().HasKey(p => p.Id);
+        builder.Entity<Provider>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<Provider>().Property(p => p.Name).IsRequired();
+        builder.Entity<Provider>().Property(p => p.Email).IsRequired();
+        builder.Entity<Provider>().Property(p => p.Phone).IsRequired();
+        builder.Entity<Provider>().Property(p => p.Ruc).IsRequired();
+                    
         //Asset Entity Configuration
         //Apply snake Case naming convention
         

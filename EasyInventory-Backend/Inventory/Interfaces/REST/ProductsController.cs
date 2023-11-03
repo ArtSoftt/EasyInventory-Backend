@@ -50,7 +50,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpPut]
-    public async Task<IActionResult> UpdateProductById( [FromBody]CreateProductResource product)
+    public async Task<IActionResult> UpdateProductByName( [FromBody]CreateProductResource product)
     {
         var updateProductByIdCommand = UpdateProductCommandFromResourceAssembler.ToCommandFromResource(product);
         var newProduct = await _productCommandService.Handle(updateProductByIdCommand);
