@@ -49,6 +49,10 @@ builder.Services.AddScoped<IProviderQueryService, ProviderQueryService>();
 builder.Services.AddScoped<IProviderCommandService, ProviderCommandService>();
 builder.Services.AddScoped<IProviderRepository, ProviderRepository>();
 
+builder.Services.AddScoped<ISaleRepository, SaleRepository>();
+builder.Services.AddScoped<ISaleCommandService, SaleCommandService>();
+builder.Services.AddScoped<ISaleQueryService, SaleQueryService>();
+
 
 var app = builder.Build();
 
