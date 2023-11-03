@@ -18,7 +18,6 @@
 
 
     <ItemGroup>
-      <Folder Include="Inventory\Domain\Model\Entities\" />
       <Folder Include="Inventory\Domain\Model\ValueObjects\" />
       <Folder Include="Profiles\Application\" />
       <Folder Include="Profiles\Infrastructure\" />

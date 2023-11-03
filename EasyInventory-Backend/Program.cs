@@ -40,6 +40,9 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IProductQueryService, ProductQueryService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductCommandService, ProductCommandService>();
+builder.Services.AddScoped<ICustomerQueryService, CustomerQueryService>();
+builder.Services.AddScoped<ICustomerCommandService, CustomerCommandService>();
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 
 
 var app = builder.Build();
