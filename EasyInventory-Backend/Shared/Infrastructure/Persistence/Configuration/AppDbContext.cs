@@ -50,6 +50,13 @@ public class AppDbContext :DbContext
         builder.Entity<Provider>().Property(p => p.Phone).IsRequired();
         builder.Entity<Provider>().Property(p => p.Ruc).IsRequired();
                     
+        //Sale Entity Configuration
+        builder.Entity<Sale>().ToTable("Sales");
+        builder.Entity<Sale>().HasKey(p => p.Id);
+        builder.Entity<Sale>().Property(p=>p.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<Sale>().Property(p => p.Name).IsRequired();
+        builder.Entity<Sale>().Property(p => p.SaleDate).IsRequired();
+        builder.Entity<Sale>().Property(p => p.TotalCost).IsRequired();
         //Asset Entity Configuration
         //Apply snake Case naming convention
         
