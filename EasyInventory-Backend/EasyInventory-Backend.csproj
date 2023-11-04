@@ -18,11 +18,10 @@
 
 
     <ItemGroup>
-      <Folder Include="Inventory\Application\" />
-      <Folder Include="Inventory\Domain\Repositories\" />
-      <Folder Include="Inventory\Domain\Services\" />
-      <Folder Include="Inventory\Infrastructure\" />
-      <Folder Include="Inventory\Interfaces\" />
+      <Folder Include="Inventory\Domain\Model\ValueObjects\" />
+      <Folder Include="Profiles\Application\" />
+      <Folder Include="Profiles\Infrastructure\" />
+      <Folder Include="Profiles\Interfaces\" />
     </ItemGroup>
 
 </Project>

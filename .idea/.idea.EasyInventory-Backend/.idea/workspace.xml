@@ -9,25 +9,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d8fdc49-aa29-4c9c-a01c-c3186c27e0f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EasyInventory-Backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EasyInventory-Backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/Controllers/WeatherForecastController.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/EasyInventory-Backend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EasyInventory-Backend/EasyInventory-Backend.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/Inventory/Domain/Model/Product.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyInventory-Backend/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/Shared/Domain/Services/Communication/BaseResponse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/Shared/Persistence/Contexts/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyInventory-Backend/Shared/Persistence/Contexts/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/Shared/Persistence/Repositories/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyInventory-Backend/Shared/Persistence/Repositories/BaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/Shared/Persistence/Repositories/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyInventory-Backend/Shared/Persistence/Repositories/UnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/Shared/Persistence/Contexts/AppDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/Shared/Persistence/Repositories/BaseRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/Shared/Persistence/Repositories/UnitOfWork.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/bin/Debug/net7.0/EasyInventory-Backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EasyInventory-Backend/bin/Debug/net7.0/EasyInventory-Backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/bin/Debug/net7.0/EasyInventory-Backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EasyInventory-Backend/bin/Debug/net7.0/EasyInventory-Backend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/obj/Debug/net7.0/EasyInventory-Backend.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EasyInventory-Backend/obj/Debug/net7.0/EasyInventory-Backend.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/obj/Debug/net7.0/EasyInventory-Backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EasyInventory-Backend/obj/Debug/net7.0/EasyInventory-Backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/obj/Debug/net7.0/EasyInventory-Backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EasyInventory-Backend/obj/Debug/net7.0/EasyInventory-Backend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/obj/Debug/net7.0/ref/EasyInventory-Backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EasyInventory-Backend/obj/Debug/net7.0/ref/EasyInventory-Backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/obj/Debug/net7.0/refint/EasyInventory-Backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EasyInventory-Backend/obj/Debug/net7.0/refint/EasyInventory-Backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyInventory-Backend/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/EasyInventory-Backend/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2XUl8R7bJvrVTIxj5FYb8V7M8mm" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "RiderNuGetOptionsPageId",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/vega/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
+      "/Users/vega/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
+      "/Users/vega/.local/share/Symbols/src"
+    ]
   }
 }]]></component>
   <component name="RunManager">
@@ -47,7 +86,22 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d8fdc49-aa29-4c9c-a01c-c3186c27e0f9" name="Changes" comment="" />
+      <created>1698691381846</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698691381846</updated>
+      <workItem from="1698691384105" duration="22977000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
