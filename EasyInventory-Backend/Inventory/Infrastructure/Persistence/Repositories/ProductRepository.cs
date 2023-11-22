@@ -8,17 +8,22 @@ namespace EasyInventory_Backend.Inventory.Infrastructure.Persistence.Repositorie
 
 public class ProductRepository:BaseRepository<Product>,IProductRepository
 {
-    private IProductRepository _productRepositoryImplementation;
 
     public ProductRepository(AppDbContext context) : base(context)
     {
         
     }
 
+    public new async Task<Product?> FindByIdAsync(int id)
+    {
+        return await Context.Set<Product>()
+            .FirstOrDefaultAsync(p => p.Id == id);
+    }
+
     public async Task<IEnumerable<Product>> FindByUserIdAsync(int userId)
     {
         return await Context.Set<Product>()
-            .Where(product => product.UserId == userId)
+            .Where(product => product.ProfileId == userId)
             .ToListAsync();
     }
 
@@ -26,6 +31,7 @@ public class ProductRepository:BaseRepository<Product>,IProductRepository
     {
         
         return await Context.Set<Product>()
+            .Include(p=>p.Profile)
             .FirstOrDefaultAsync(product => product.Name == name);
     }
 

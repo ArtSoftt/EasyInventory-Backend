@@ -9,6 +9,6 @@ public static class CreateProductCommandFromResourceAssembler
     {
         return new CreateProductCommand(
             resource.Name, resource.UnitPrice, resource.RealPrice, resource.Discount, resource.Stock,
-            resource.CurrentStock, resource.UserId);
+            resource.CurrentStock, resource.UserId,resource.Category);
     }
 }

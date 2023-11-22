@@ -27,27 +27,22 @@ public class ProductsController : ControllerBase
         var createProductCommand =
             CreateProductCommandFromResourceAssembler.ToCommandFromResource(createProductResource);
         var product = await _productCommandService.Handle(createProductCommand);
-        var resource = ProductResourceFromEntityAssembler.ToResourceFromEntity(product);
-        return CreatedAtAction(nameof(GetProductByIdentifier), new { id = resource.Id }, resource);
+        Console.WriteLine(product.Profile);
+        
+        return CreatedAtAction(nameof(GetProductByIdentifier), new { id = product.Id },product);
     }
 
     [HttpGet("{id:int}")]
     public async Task<IActionResult> GetProductByIdentifier(int id)
     {
         var getProductByIdQuery = new GetProductByIdentifierQuery(id);
-        var product = await _productQueryService.Handle(getProductByIdQuery);   
+        var product = await _productQueryService.Handle(getProductByIdQuery);
+        if (product is null) throw new Exception("Product not exist");
         var resource = ProductResourceFromEntityAssembler.ToResourceFromEntity(product);
         return Ok(resource);
     }
 
-    [HttpGet("products{id:int}")]
-    public async Task<IActionResult> GetProductsByUserId(int id)
-    {
-        var getProductsByUserIdQuery = new GetProductsByUserIdQuery(id);
-        var products = await _productQueryService.Handle(getProductsByUserIdQuery);
-        var resources = products.Select(ProductResourceFromEntityAssembler.ToResourceFromEntity);
-        return Ok(resources);
-    }
+   
 
     [HttpPut]
     public async Task<IActionResult> UpdateProductByName( [FromBody]CreateProductResource product)
@@ -62,8 +57,8 @@ public class ProductsController : ControllerBase
     public async Task<IActionResult> DeleteProductById(int id)
     {
         var deleteProductCommand = new DeleteProductCommand(id);
-        var product = await _productCommandService.Handle(deleteProductCommand);
-        return Ok(product);
+        await _productCommandService.Handle(deleteProductCommand);
+        return Ok("Product Delete successfully");
     }
     
 }

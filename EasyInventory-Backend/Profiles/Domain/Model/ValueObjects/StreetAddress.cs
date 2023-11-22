@@ -2,7 +2,7 @@ namespace EasyInventory_Backend.Profiles.Domain.Model.ValueObjects;
 
 public record StreetAddress(string Street, string City, string State, string ZipCode)
 {
-    public StreetAddress() : this(string.Empty, string.Empty, string.Empty, String.Empty)
+    public StreetAddress() : this(string.Empty, string.Empty, string.Empty, string.Empty)
     {
         
     }

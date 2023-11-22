@@ -5,7 +5,6 @@
 /Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/EasyInventory-Backend.runtimeconfig.json
 /Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/EasyInventory-Backend.dll
 /Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/EasyInventory-Backend.pdb
-/Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/AutoMapper.dll
 /Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/Google.Protobuf.dll
 /Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/K4os.Compression.LZ4.dll
 /Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/K4os.Compression.LZ4.Streams.dll
@@ -59,3 +58,11 @@
 /Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/obj/Debug/net7.0/EasyInventory-Backend.pdb
 /Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/obj/Debug/net7.0/EasyInventory-Backend.genruntimeconfig.cache
 /Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/obj/Debug/net7.0/ref/EasyInventory-Backend.dll
+/Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/BCrypt.Net-Next.dll
+/Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/Swashbuckle.AspNetCore.Annotations.dll
+/Users/vega/Documents/GitHub/open/EasyInventory-Backend/EasyInventory-Backend/bin/Debug/net7.0/AutoMapper.dll

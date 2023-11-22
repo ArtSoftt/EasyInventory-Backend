@@ -20,7 +20,7 @@ public class ProductCommandService: IProductCommandService
     public async Task<Product> Handle(CreateProductCommand command)
     {
         var product = new Product(command.Name, command.UnitPrice, command.RealPrice, command.Discount, command.Stock,
-            command.CurrentStock, command.UserId);
+            command.CurrentStock, command.UserId,command.Category);
         await _productRepository.AddAsync(product);
         await _unitOfWork.CompleteAsync();
         return product;
